@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* basic reset */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* variables */
+:root {
+  --heading: 2.2rem;
+  --body-font-size: 1.5rem;
+  --primary-color: #512051;
+  --orange: #ef9546;
+  --purple: #512051;
+  --pink: #ee69a4;
+  --grey: #927b91;
+  --page-bg: #0a0c1c;
+  --card-bg: #1b1937;
+  --line-color: #2e405a;
+  --white: #ffffff;
+  --kind-of-white: #f7f2f7;
+  --lailake: #ab5cdb;
+  --Liberty: #5E54A4;
+  --Arsenic: #3D3B48;
+  --Salmon: #FF7979;
+  --green: #38CC8B;
+  --green--hover: #33b97e;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: var(--primary-color);
+  min-height: 100vh;
+  background-image: url("./images/bg-intro-desktop.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: var(--Salmon);
+  padding: 8rem 5vw;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+}
+
+/* common */
+.flex {
+  display: flex;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.color--white {
+  color: #fff;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+/*  */
+main {
+  width: 100%;
+  max-width: 110.7rem;
+  margin: 0 auto;
+  text-align: center;
+}
+main .content {
+  color: #fff;
+  margin-bottom: 6.4rem;
+}
+main .content h1 {
+  margin-bottom: 1.6rem;
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+  font-weight: 600;
+}
+main .form__header {
+  color: #fff;
+  width: 100%;
+  background: var(--Liberty);
+  padding: 1.8rem 6.7rem;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  border-radius: 10px;
+}
+main .form__content {
+  margin-top: 2.4rem;
+  display: grid;
+  padding: 2.4rem;
+  background-color: #fff;
+  gap: 1.6rem;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  border-radius: 10px;
+}
+main .form__content .input_container p[class*=error] {
+  text-align: right !important;
+  color: var(--Salmon);
+  padding: 0;
+  margin-top: 0.6rem;
+  display: none;
+}
+main .form__content .input_container.error {
+  position: relative;
+}
+main .form__content .input_container.error p[class*=error] {
+  display: block;
+}
+main .form__content .input_container.error input {
+  padding-right: calc(2rem + 24px + 5px) !important;
+}
+main .form__content .input_container.error::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url("images/icon-error.svg");
+  z-index: 2;
+  position: absolute;
+  right: 2rem;
+  top: 1.6rem;
+}
+main .form__content .input_container input {
+  width: 100%;
+  padding: 1.6rem 2rem;
+  border: 1px solid #DEDEDE;
+  border-radius: 5px;
+}
+main .form__content .input_container input, main .form__content .input_container input::placeholder {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+main .form__content button {
+  background: var(--green);
+  color: #fff;
+  padding-block: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0 7px var(--green--hover);
+}
+main .form__content button:active, main .form__content button:focus {
+  transform: translateY(4px);
+  box-shadow: 0 4px var(--green--hover);
+  outline: 0;
+  border: 0;
+}
+main .form__content p {
+  color: var(--Arsenic);
+  padding-inline: 2rem;
+}
+main .form__content p span {
+  color: var(--Salmon);
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4.5rem;
+  }
+  main .content {
+    text-align: left;
+    align-self: center;
+  }
+  main .content h1 {
+    font-size: 5rem;
+    line-height: 5.5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

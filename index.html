@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+
+<body>
+  <main>
+    <section class="content">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but
+        understanding how developers think is invaluable. </p>
+    </section>
+    <form class="form" novalidate>
+      <h2 class="form__header">
+        Try it free 7 days then $20/mo. thereafter
+      </h2>
+      <div class="form__content">
+        <div class="input_container">
+          <input type="text" name="First-Name" placeholder="First Name">
+          <p class="error-empty">
+            First Name cannot be empty
+          </p>
+        </div>
+        <div class="input_container"><input type="text" name="Last-Name" placeholder="Last Name">
+          <p class="error-empty">
+            Last Name cannot be empty
+          </p>
+        </div>
+        <div class="input_container"><input type="Email" name="email-Address" placeholder="email Address">
+          <p class="error-empty">
+            Email cannot be empty
+          </p>
+          <p class="error-email">
+            Email is not valid
+          </p>
+        </div>
+        <div class="input_container"><input type="password" name="Password" placeholder="Password">
+          <p class="error-empty">
+            password cannot be empty
+          </p>
+        </div>
+        <button type="submit">CLAIM YOUR FREE TRIAL</button>
+        <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+      </div>
+    </form>
+  </main>
+
+
+</body>
+<script src="./script.js"></script>
+
+</html>
